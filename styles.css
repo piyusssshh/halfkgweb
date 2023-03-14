@@ -16,16 +16,50 @@
   }
 @font-face {
     font-family: Bely;
-    src: url(fonts/Bely.otf);
+    src: url(fonts/Bely.ttf);
   }
 
 /* colors */
 .c-text-col-one{
     color: #F1E8D9;
 }
+.c-text-col-two{
+    color: #16433C;
+}
 
+/* font size */
+
+.c-fs-1{
+    font-size: 40px;
+}
+.c-fs-2{
+    font-size: 32px;
+}
+.c-fs-3{
+    font-size: 26px;
+}
+.c-fs-4{
+    font-size: 18px;
+}
+
+/* font */
+
+.c-f-h{
+    font-family: Bely;
+}
+.c-f-b{
+    font-family: soleilregular;
+}
+.c-f-b-b{
+    font-family: soleilBold;
+}
+
+
+
+/* global */
 body{
     background-color: #16433C;
+    color: #F1E8D9;
 }
 .c-navbar{
     font-family: soleilregular;
@@ -52,4 +86,7 @@ body{
     border: #000000 2px solid;
     background-color: #000000;
     
+}
+.app-store-logo{
+    width: 50px;
 }

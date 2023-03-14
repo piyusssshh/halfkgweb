@@ -1,0 +1,55 @@
+@font-face {
+    font-family: soleilBold;
+    src: url(fonts/SoleilBold.otf);
+  }
+@font-face {
+    font-family: soleilBook;
+    src: url(fonts/SoleilBook.otf);
+  }
+@font-face {
+    font-family: soleilLight;
+    src: url(fonts/SoleilLight.otf);
+  }
+@font-face {
+    font-family: soleilregular;
+    src: url(fonts/SoleilRegular.otf);
+  }
+@font-face {
+    font-family: Bely;
+    src: url(fonts/Bely.otf);
+  }
+
+/* colors */
+.c-text-col-one{
+    color: #F1E8D9;
+}
+
+body{
+    background-color: #16433C;
+}
+.c-navbar{
+    font-family: soleilregular;
+    background-color: #E8AE3D;
+    height: 80px;
+}
+.c-btn-primary{
+    color: #000000;
+    border: #000000 2px solid;
+}
+.c-btn-primary:hover{
+    color: #ffff;
+    border: #000000 2px solid;
+    background-color: #000000;
+    
+}
+.c-btn-seccond{
+    color: #E8AE3D;
+    border: #16433C 2px solid;
+    background-color: #16433C;
+}
+.c-btn-seccond:hover{
+    color: #ffff;
+    border: #000000 2px solid;
+    background-color: #000000;
+    
+}

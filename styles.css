@@ -18,6 +18,10 @@
     font-family: Bely;
     src: url(fonts/Bely.ttf);
   }
+@font-face {
+    font-family: BelyBold;
+    src: url(fonts/BelyBold.ttf);
+  }
 
 /* colors */
 .c-text-col-one{
@@ -46,6 +50,9 @@
 
 .c-f-h{
     font-family: Bely;
+}
+.c-f-h-h{
+    font-family: BelyBold;
 }
 .c-f-b{
     font-family: soleilregular;
@@ -90,3 +97,4 @@ body{
 .app-store-logo{
     width: 50px;
 }
+

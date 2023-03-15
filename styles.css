@@ -52,7 +52,7 @@
 }
 .c-fs-5{
     /* font-size: 18px; */
-    font-size: clamp(8px,2vw,12px);
+    font-size: clamp(8.5px,2vw,12px);
 }
 
 
@@ -85,7 +85,7 @@ body{
 .c-navbar{
     font-family: soleilregular;
     background-color: #E8AE3D;
-    height: clamp(50px,10vw,80px);
+    height: clamp(50px,10vw,60px);
 }
 .c-btn-primary{
     color: #000000;

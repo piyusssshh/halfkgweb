@@ -44,7 +44,7 @@
 }
 .c-fs-3{
     /* font-size: 26px; */
-    font-size: clamp(18px,4vw,26px);
+    font-size: clamp(16px,4vw,26px);
 }
 .c-fs-4{
     font-size: clamp(12px,3vw,18px);
@@ -54,6 +54,11 @@
     /* font-size: 18px; */
     font-size: clamp(8.5px,2vw,12px);
 }
+.c-fs-6{
+    /* font-size: 18px; */
+    font-size: clamp(16.36px,2.5vw,18px);
+}
+
 
 
 /* font */
@@ -86,6 +91,13 @@ body{
     font-family: soleilregular;
     background-color: #E8AE3D;
     height: clamp(50px,10vw,60px);
+}
+
+.halfkg-logo{
+    width:clamp(108px,20vw,168px);
+}
+.c-btn{
+    padding: 0;
 }
 .c-btn-primary{
     color: #000000;

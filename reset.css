@@ -1,7 +1,7 @@
 h1,h2,h3,h4,p{
     padding: 0!important;
     margin: 0!important;
-    line-height: 1.2em;
+    line-height: auto;
 }
 p,h2,h3,h4{
     letter-spacing: 3%;
@@ -9,4 +9,9 @@ p,h2,h3,h4{
 a{
     text-decoration: none;
 
+}
+button{
+    border-radius: 4px !important;
+    line-height: 1.2em !important;
+    padding: clamp(12px,2vw,10px);
 }

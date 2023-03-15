@@ -44,15 +44,23 @@
 }
 .c-fs-3{
     /* font-size: 26px; */
-    font-size: clamp(12px,4vw,26px);
+    font-size: clamp(18px,4vw,26px);
 }
 .c-fs-4{
+    font-size: clamp(12px,3vw,18px);
+
+}
+.c-fs-5{
     /* font-size: 18px; */
-    font-size: clamp(8px,3vw,18px);
+    font-size: clamp(8px,2vw,12px);
 }
 
 
 /* font */
+p{
+    font-family: soleilregular;
+    
+}
 
 .c-f-h{
     font-family: Bely;
@@ -100,7 +108,10 @@ body{
     background-color: #000000;
     
 }
+.app-store-btn{
+    width: 200px;
+}
 .app-store-logo{
-    width: clamp(20px,6vw,40px);
+    width: clamp(20px,6vw,33px);
 }
 

@@ -154,6 +154,7 @@ body{
     width: clamp(19px,6vw,33px);
 }
 .chat-w{
+    z-index: 1046;
     position: fixed;
     bottom: 2vh;
     right: 2vh;

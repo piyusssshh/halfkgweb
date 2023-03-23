@@ -56,7 +56,7 @@
 }
 .c-fs-6{
     /* font-size: 18px; */
-    font-size: clamp(13px,2.5vw,18px);
+    font-size: clamp(12px,2vw,18px);
 }
 
 

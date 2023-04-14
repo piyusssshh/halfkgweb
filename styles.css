@@ -31,6 +31,7 @@
     color: #16433C;
 }
 
+
 /* font size */
 
 .c-fs-1{
@@ -161,4 +162,14 @@ body{
     /* background-color: white; */
 
 }
-
+/* categories */
+.c-cat-bg{
+    background-color: #648782;
+    width: clamp(260px,10vw,284px);
+    height: 120px;
+    color: #F1E8D9;
+    font-size: 20px;
+}
+.cat-ico{
+    width: 65px;
+}

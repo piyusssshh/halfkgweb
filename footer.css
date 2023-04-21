@@ -1,0 +1,55 @@
+.footer_Main_Content {
+    z-index: 100;
+    background: #1d2023;
+    /* background-color: var(--black-color); */
+    color: var(--c-light-grey);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--c-fs-5);
+}
+.footer h4 {
+    font-weight: bold;
+}
+.c-link-underline {
+    color: var(--c-light-grey);
+}
+.c-link-underline:hover {
+    color: #d4d4d4;
+    text-decoration: underline !important;
+}
+.full-line {
+    height: 250px;
+    border-left: 1px solid var(--c-grey);
+}
+.f-menu-cont {
+    width: 800px;
+    justify-content: space-between;
+}
+.c-col-one {
+    color: var(-grey-color);
+}
+.f-nav-link-cont {
+    gap: 8px;
+}
+.awesomness_1 {
+    background-color: #7f7b82;
+}
+.grey-cont {
+    background-color: #7f7b82 3a;
+}
+.footer2 {
+    background: #1d2023;
+}
+.footer2 .f2-spacer {
+    padding: 0 10px;
+}
+.copyright {
+    color: var(--c-grey);
+}
+.casestudycard {
+    width: clamp(300px, 30vw, 400px);
+}
+  

@@ -30,46 +30,93 @@
             margin: 20px;
         }
 
-        .card {
-            width: 300px;
-            height: 305px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-            margin: 20px;
-            float: left;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .container {
-            padding: 2px 16px;
-        }
-
         .center {
-            display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            margin-left: 580px;
         }
 
-        img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
+        .card2 {
+            display: block;
+            top: 0px;
+            position: relative;
+            max-width: 262px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            padding: 0px 24px;
+            margin: 12px;
+            text-decoration: none;
+            z-index: 0;
+            overflow: hidden;
+            /* border: 1px solid #f2f8f9; */
         }
 
-        h4 {
-            font-size: 1.2em;
-            margin-top: 10px;
+        .card2:hover {
+            transition: all 0.2s ease-out;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            top: -4px;
+            /* border: 1px solid #ccc; */
+            /* background-color: white; */
+        }
+
+        .card2:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -16px;
+            right: -16px;
+            background: #00838d;
+            height: 32px;
+            width: 32px;
+            border-radius: 32px;
+            transform: scale(2);
+            transform-origin: 50% 50%;
+            transition: transform 0.15s ease-out;
+        }
+
+        .card2:hover:before {
+            transform: scale(2.15);
+        }
+
+        .go-corner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            overflow: hidden;
+            top: 0;
+            right: 0;
+            background-color: #00838d;
+            border-radius: 0 4px 0 32px;
+        }
+
+        .go-arrow {
+            margin-top: -4px;
+            margin-right: -4px;
+            color: white;
+            font-family: courier, sans;
+        }
+
+        h3 {
+            color: #262626;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 4px;
         }
 
         p {
-            margin: 10px 0;
-            font-size: 0.9em;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #666;
+        }
+
+        p.small {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -79,311 +126,288 @@
     <h2>Organic, Healthy, and Eco-Friendly Groceries</h2>
     <div id="qr-code">
         <img src="https://chart.googleapis.com/chart?cht=qr&amp;chl=https%3A%2F%2Fapp.halfkg.store&amp;chs=180x180&amp;choe=UTF-8&amp;chld=L|2"
-            alt="Download Halfkg's mobile app">
+            alt="Download Halfkg's mobile app" style="margin-left: 56px;">
     </div>
     <div id="motivational-line">
         <p>Shop smart. Live well.</p>
     </div>
-    <div class="center">
-        <a href="http://halfkg.store/products.php?product=brown-rice-powder"></a>
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=brown-rice-powder">
-                <img src="https://via.placeholder.com/300x200.png?text=No+Image">
-                <div class="container">
-                    <h4>Rajma</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Rajma </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Green Peas</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Green Peas </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Moong Whole</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Moong Whole </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Soyabean Whole</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Soyabean Whole </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Urad Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Urad Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>White Peas</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>White Peas </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Urad Whole</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Urad Whole </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Chana Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Chana Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Ragi Whole</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Ragi Whole </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Green Gram Whole</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Green Gram Whole </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Masoor Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Masoor Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <a href="http://halfkg.store/products.php?product=brown-rice-powder"></a>
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=brown-rice-powder">
-                <img src="https://via.placeholder.com/300x200.png?text=No+Image">
-                <div class="container">
-                    <h4>Roasted Channa</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Roasted Chana Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Masoor Whole</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Masoor Whole </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Kala Chana</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Kala Chana </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Moth/Matki</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Moth/Matki </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Pancharatna Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Pancharatna Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Kidney Beans</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Kidney Beans </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Chowla/Cowpea</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Chowla/Cowpea </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Chana Whole/Desi Chana</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Chana Whole/Desi Chana </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Horse Gram</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Horse gram </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Mix Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Mix Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Kabuli Chana</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Kabuli Chana </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Toor Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Toor Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Moong Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Moong Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
-    <div class="center">
-        <div class="card">
-            <a href="http://halfkg.store/products.php?product=cereals"></a>
-            <a href="http://halfkg.store/products.php?product=cereals">
-                <img src="https://endproducticon.com/sdfd/df.img">
-                <div class="container">
-                    <h4>Arhar Dal</h4>
-                    <p>Rich in:</p>
+    <div class="container center">
+        <a class="card2" href="#">
+            <h3>Arhar Dal </h3>
+            <p>Rich in:</p>
+            <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
+    
+
 
     <!-- <div class="d-flex justify-content-center center">
         <a href="/footer.html"></a> 

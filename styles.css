@@ -173,3 +173,11 @@ body{
 .cat-ico{
     width: 65px;
 }
+
+/* footer */
+.footer-bg{
+    background-color:#F1E8D9;
+}
+.f-link{
+    color: #16433C;
+}
